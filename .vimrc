@@ -2,8 +2,13 @@ execute pathogen#infect()
 syntax on
 filetype plugin indent on
 
-set guifont=IBM\ Plex\ Mono\ Light:h13
+if has("win32")
+    set guifont=IBM_Plex_Mono:h9:cANSI:qDRAFT
+else
+    set guifont=IBM_Plex_Mono:h9:cANSI:qDRAFT
+endif
 colorscheme default
+set guioptions-=T
 
 set sts=4
 set shiftwidth=4
