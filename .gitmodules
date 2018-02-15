@@ -22,3 +22,6 @@
 [submodule "vimproc.vim"]
 	path = vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim.git
+[submodule "ack.vim"]
+	path = ack.vim
+	url = https://github.com/mileszs/ack.vim.git
