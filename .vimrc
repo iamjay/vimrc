@@ -29,3 +29,6 @@ let g:jsx_ext_required = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:tsuquyomi_disable_quickfix = 1
 
+map <C-n> :NERDTreeToggle<CR>
+command! BW :bn|:bd#
+
