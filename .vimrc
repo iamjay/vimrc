@@ -6,7 +6,7 @@ elseif has("gui_win32")
     set guifont=IBM_Plex_Mono:h9:cANSI:qDRAFT
 endif
 
-colorscheme default
+colorscheme evening
 set guioptions-=T
 
 syntax on
@@ -28,7 +28,12 @@ let g:ctrlp_custom_ignore = {
 let g:jsx_ext_required = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:tsuquyomi_disable_quickfix = 1
+let g:tsuquyomi_disable_default_mappings = 1
 
 map <C-n> :NERDTreeToggle<CR>
 command! BW :bn|:bd#
+
+map <buffer> <C-]> <Plug>(TsuquyomiDefinition)
+map <buffer> <C-t> <Plug>(TsuquyomiGoBack)
+map <F2> :NERDTreeFind<CR>
 
