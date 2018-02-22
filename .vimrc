@@ -6,7 +6,10 @@ elseif has("gui_win32")
     set guifont=IBM_Plex_Mono:h9:cANSI:qDRAFT
 endif
 
-colorscheme evening
+set t_Co=256
+set background=light
+colorscheme PaperColor
+
 set guioptions-=T
 
 syntax on
@@ -29,11 +32,12 @@ let g:jsx_ext_required = 0
 let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:tsuquyomi_disable_quickfix = 1
 let g:tsuquyomi_disable_default_mappings = 1
+let g:indent_guides_enable_on_vim_startup = 1
 
 map <C-n> :NERDTreeToggle<CR>
 command! BW :bn|:bd#
 
-map <buffer> <C-]> <Plug>(TsuquyomiDefinition)
-map <buffer> <C-t> <Plug>(TsuquyomiGoBack)
+map <C-]> :TsuquyomiDefinition<CR>
+map <C-t> :TsuquyomiGoBack<CR>
 map <F2> :NERDTreeFind<CR>
 
