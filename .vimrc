@@ -7,8 +7,8 @@ elseif has("gui_win32")
 endif
 
 set t_Co=256
-set background=light
-colorscheme PaperColor
+set background=dark
+colorscheme desert
 
 set guioptions-=T
 
